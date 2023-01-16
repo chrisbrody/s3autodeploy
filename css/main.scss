@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper__userinfo {
+    display: flex;
+    justify-content: center;
+
+    div {
+        padding: 0 1rem;
+    }
+}
+
+#sleep__data__wrapper {
+    .wrapper__sleep__item {
+        border: 1px solid black;
+        margin: 1rem;
+        padding: 1rem;
+
+        .sleep__hrAvg5,
+        .sleep__rmssd5 {
+            max-width: 100%;
+            overflow-x: scroll;
+        }
+    }
+}

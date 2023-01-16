@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Oura Ring API Data Test</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1 class="text-center">Oura Ring API Data Test - <a href="https://cloud.ouraring.com/docs/sleep" target="_blank">API DOCS</a></h1>
+        </div>
+      </div>
+    </div>
+    
+    <!-- display user info -->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="wrapper__userinfo">
+            <div id="user"></div>
+            <div id="age"></div>
+            <div id="gender"></div>
+            <div id="height"></div>
+            <div id="weight"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- display Daily Summaries -->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2>Daily Summaries</h2>
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="sleep-tab" data-bs-toggle="tab" data-bs-target="#sleep" type="button" role="tab" aria-controls="sleep" aria-selected="true">sleep</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="readiness-tab" data-bs-toggle="tab" data-bs-target="#readiness" type="button" role="tab" aria-controls="readiness" aria-selected="false">readiness</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="activity-tab" data-bs-toggle="tab" data-bs-target="#activity" type="button" role="tab" aria-controls="activity" aria-selected="false">activity</button>
+            </li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div class="tab-pane active" id="sleep" role="tabpanel" aria-labelledby="sleep-tab" tabindex="0">
+              
+              <div id="sleep__data__wrapper"></div>
+
+            </div>
+            <div class="tab-pane" id="readiness" role="tabpanel" aria-labelledby="readiness-tab" tabindex="0">tab 2</div>
+            <div class="tab-pane" id="activity" role="tabpanel" aria-labelledby="activity-tab" tabindex="0">tab 3</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+  <script src="js/jquery-3.6.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
+</html>
