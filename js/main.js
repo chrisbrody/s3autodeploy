@@ -16,7 +16,7 @@ let START_DATE = '2023-01-08'
 let END_DATE = '2023-01-13'
 
 // token - this needs to be moved
-let access_token = process.env.OURA_ACCESS_KEY
+let access_token = 'OJ2ON35XKCSTVUZEW3AMI5ERLD3Q4LKA'
 
 // GET USER INFORMATION
 const getUserInfo = async () => {
